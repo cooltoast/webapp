@@ -31,8 +31,8 @@ block content
   h2 List of my photos
   ul.list-unstyled
     for photo in photos
-      a(href='#{photo.source}', rel="lightbox")
-        li.fb-photo
+      li.fb-photo
+        a(href='#{photo.source}', class = 'fancybox')
           img(src='#{photo.source}')
         
 

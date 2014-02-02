@@ -9,14 +9,31 @@ html
 
     title #{title} - Starter Template for Bootstrap
 
-    link(href='../css/styles.css?v=#{cacheBuster}', rel='stylesheet')
+    link(href='/css/styles.css?v=#{cacheBuster}', rel='stylesheet')
 
-    script(src='../js/lib/bootstrap.js')
-    script(src='../js/main.js')
+   
+    
+    script(src='http://code.jquery.com/jquery-latest.min.js')
+    
+    script(src='/js/lib/jquery.fancybox.js')    
+    link(src='/css/fancybox/jquery.fancybox.css')
 
-    script(src='../js/lib/jquery-1.10.2.min.js')
-    script(src='../js/lib/lightbox-2.6.min.js')
-    link(src='../css/lightbox.css')
+    link(src='/css/fancybox/jquery.fancybox-buttons.css')
+    script(src='js/lib/jquery.fancybox-buttons.js')
+    script(src='js/lib/jquery.fancybox-media.js')
+
+    link(src='css/fancybox/jquery.fancybox-thumbs.css')
+    script(src='/js/lib/jquery.fancybox-thumbs.js')
+
+
+
+
+    script(src='/js/lib/bootstrap.min.js')
+
+
+    script(src='/js/main.js')
+
+
 
   body
     #wrap
@@ -25,3 +42,5 @@ html
         include partials/flash
         block content
     include partials/footer
+
+
