@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 CrowdMed Webapp
+  p.lead
+    | Log in with Facebook and see your photos.
+    br
+
+  if user
+    .alert.alert-success.animated.flipInX
+      i.fa.fa-check
+      strong Success!
+      |  You have logged in.
