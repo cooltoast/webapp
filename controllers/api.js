@@ -24,6 +24,7 @@ exports.getFacebook = function(req, res, next) {
     getMyPhotos: function(done) {
       graph.get(req.user.facebook + '/photos', function(err, photos1) {
       console.log(req.user.facebook); /*store into mongodb, check if there, proof that user is logged in*/
+      
         done(err, photos1.data);
       });  
     }

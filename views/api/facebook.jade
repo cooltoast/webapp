@@ -15,14 +15,22 @@ block content
   .btn-group.btn-group-justified
     a.btn.btn-success(href='https://github.com/cooltoast/webapp', target='_blank')
       i.fa.fa-code-fork
-      | Gihub Code
+      | Source Code
+
+    a.btn.btn-success(href='https://github.com/sahat/hackathon-starter', target='_blank')
+      i.fa.fa-code-fork
+      | Template Source Code  
+
+    a.btn.btn-success(href='https://facebook.com/me', target='_blank')
+      i.fa.fa-facebook
+      | My Facebook  
 
   h2 My Info
   h4= me.name
   h6 Username: #{me.username}
   h6 Email: #{me.email}
 
-  h2 List of my photos
+  h2 My photos
   ul.list-unstyled
     for photo in photos
       li.fb-photo
