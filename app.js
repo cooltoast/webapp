@@ -104,7 +104,7 @@ app.get('/account/unlink/:provider', passportConf.isAuthenticated, userControlle
 
 app.get('/facebook', passportConf.isAuthenticated, passportConf.isAuthorized, apiController.getFacebook);
 
-app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }));
+app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email', 'user_photos'] }));
 app.get('/auth/facebook/callback', passport.authenticate('facebook', { successRedirect: '/', failureRedirect: '/login' }));
 
 app.listen(app.get('port'), function() {
