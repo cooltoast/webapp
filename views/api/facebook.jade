@@ -34,13 +34,7 @@ block content
       li.fb-photo
         a(href='#{photo.source}', class = 'fancybox')
           img(src='#{photo.source}')
-        
+ 
 
-  h2 List of my friends
-  ul.list-unstyled
-    for friend in friends
-      li
-        img(src='https://graph.facebook.com/#{friend.id}/picture?type=normal', width=30, height=30)
-        a(href='http://facebook.com/#{friend.id}') #{friend.name}
-
+  
  

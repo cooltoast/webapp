@@ -21,11 +21,6 @@ exports.getFacebook = function(req, res, next) {
         done(err, me);
       });
     },
-    getMyFriends: function(done) {
-      graph.get(req.user.facebook + '/friends', function(err, friends) {
-        done(err, friends.data);
-      });
-    },
     getMyPhotos: function(done) {
       graph.get(req.user.facebook + '/photos', function(err, photos1) {
       console.log(photos1.data);
